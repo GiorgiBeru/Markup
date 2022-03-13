@@ -1,0 +1,27 @@
+$color: (
+    base: (
+        black: #000000, 
+        light-silver: #F1F1F1, 
+        faded-black: #101010,
+        offwhite: #FAFAFA, 
+        white: #FFFFFF, 
+        light-grey: #7e7e7e, 
+        dark-grey: #4c4c4c, 
+        faded-grey: #cfcfcf
+    ), 
+    accent: (
+        dark-orange: #D87D4A, 
+        light-orange: #FBAF85, 
+        deep-orange: #8a5130
+    ), 
+    form: (
+        field-error: #CD2C2C, 
+        field-active: #D87D4A
+    )
+);
+
+@function colorSet($set, $key){
+    @return map-get(map-get($color, $set), $key)
+}; 
+
+

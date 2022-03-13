@@ -1,0 +1,68 @@
+//grouped styling
+
+.primary-btn, .secondary-btn, .tertiary-btn, .quaternary-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.primary-btn, .secondary-btn, .quaternary-btn{
+    width: 160px; 
+    height: 48px; 
+}
+
+
+//individual styles
+
+.primary-btn{
+    background: colorSet(accent, dark-orange); 
+    color: colorSet(base, white); 
+    transition: all .3s ease;
+
+    &:hover{ 
+        background: colorSet(accent, light-orange); 
+    }
+}; 
+
+
+.secondary-btn{ 
+    color: colorSet(base, black);
+    background: transparent;
+    border: 1px solid colorSet(base, black);
+    transition: all .3s ease; 
+
+    &:hover{
+        background: colorSet(base, black); 
+        color: colorSet(base, white); 
+    }
+}; 
+
+
+
+.tertiary-btn{
+    width: 80px; 
+    height: 20px; 
+    background: transparent; 
+    color: colorSet(base, faded-black);
+    transition: all .3s ease;
+
+    & svg {
+        margin-left: 10px;
+    }
+}; 
+
+.quaternary-btn{
+    background-color: colorSet(base, black);
+    color: colorSet(base, white);
+    transition: all .3s ease;
+
+    &:hover{
+        background-color: colorSet(base, dark-grey);
+    }
+}

@@ -1,0 +1,4275 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap");
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.cta-styling {
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.sub-styling {
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.sup-styling {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.h1-styling, .h2-styling, .h3-styling, .h4-styling, .h5-styling, .h6-styling, .subTitle-styling, .cta-styling {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.h1-styling {
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 700px) {
+  .h1-styling {
+    line-height: 58px;
+  }
+}
+
+.h1-styling {
+  font-size: 36px;
+}
+
+@media screen and (min-width: 320px) {
+  .h1-styling {
+    font-size: calc(1.78571vw + 30.28571px);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .h1-styling {
+    font-size: 76px;
+  }
+}
+
+.h2-styling {
+  line-height: 44px;
+  letter-spacing: 1.5px;
+}
+
+.h2-styling {
+  font-size: 28px;
+}
+
+@media screen and (min-width: 320px) {
+  .h2-styling {
+    font-size: calc(0.53571vw + 26.28571px);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .h2-styling {
+    font-size: 40px;
+  }
+}
+
+.h3-styling {
+  line-height: 36px;
+  letter-spacing: 1.15px;
+}
+
+.h3-styling {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 320px) {
+  .h3-styling {
+    font-size: calc(0.35714vw + 22.85714px);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .h3-styling {
+    font-size: 32px;
+  }
+}
+
+.h4-styling {
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+.h5-styling {
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 1.7px;
+}
+
+.h6-styling {
+  line-height: 24px;
+  letter-spacing: 1.3px;
+}
+
+.h6-styling {
+  font-size: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .h6-styling {
+    font-size: calc(0.13393vw + 14.57143px);
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .h6-styling {
+    font-size: 18px;
+  }
+}
+
+.company-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  max-width: 1100px;
+  height: 733px;
+  margin: 100px auto 0px auto;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .company-desc {
+    height: 633px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc {
+    height: 490px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.company-desc .company-desc-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  background-image: url("./style/assets/shared/mobile/image-best-gear.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 700px) {
+  .company-desc .company-desc-image {
+    background-image: url("./style/assets/shared/tablet/image-best-gear.jpg");
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc .company-desc-image {
+    width: 40%;
+    height: 100%;
+    background-image: url("./style/assets/shared/desktop/image-best-gear.jpg");
+  }
+}
+
+.company-desc .company-desc-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .company-desc .company-desc-text {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc .company-desc-text {
+    width: 49%;
+    height: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.company-desc .company-desc-text .title {
+  width: 100%;
+  max-width: 327px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.company-desc .company-desc-text .title span {
+  color: #D87D4A;
+}
+
+@media (min-width: 700px) {
+  .company-desc .company-desc-text .title {
+    width: 480px;
+    max-width: 480px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc .company-desc-text .title {
+    width: 400px;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.company-desc .company-desc-text .desc-text {
+  padding: 10px 0;
+}
+
+@media (min-width: 700px) {
+  .company-desc .company-desc-text .desc-text {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .company-desc .company-desc-text .desc-text {
+    max-width: 400px;
+    text-align: left;
+  }
+}
+
+.bottom-nav {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #000000;
+  color: #4c4c4c;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav {
+    height: 400px;
+  }
+}
+
+.bottom-nav .accent-bar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100px;
+  height: 5px;
+  margin: 0 auto;
+  background-color: #D87D4A;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .accent-bar {
+    top: 0;
+    left: 30px;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .accent-bar {
+    left: 120px;
+  }
+}
+
+.bottom-nav .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+  width: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-nav {
+    height: 40%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .footer-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px;
+  }
+}
+
+.bottom-nav .footer-nav svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 25px 0px 0px 0px;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-nav svg {
+    margin: 25px 0px 30px 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .footer-nav svg {
+    margin: 0;
+  }
+}
+
+.bottom-nav .footer-nav ul {
+  text-align: center;
+  list-style: none;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.bottom-nav .footer-nav ul li {
+  margin: 30px 0px;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-nav ul li {
+    margin: 0 30px;
+  }
+}
+
+.bottom-nav .footer-nav ul li a {
+  color: #F1F1F1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.bottom-nav .footer-nav ul li a:hover {
+  color: #D87D4A;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.bottom-nav .footer-comp-desc {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 40%;
+  width: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-comp-desc {
+    height: 50%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.bottom-nav .footer-comp-desc .comp-desc {
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: auto;
+  max-width: 400px;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-comp-desc .comp-desc {
+    text-align: left;
+    max-width: 700px;
+    margin: 0;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .footer-comp-desc .comp-desc {
+    max-width: 570px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-comp-desc .copyright {
+    padding-left: 30px;
+  }
+}
+
+.bottom-nav .footer-comp-desc .social-media {
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .bottom-nav .footer-comp-desc .social-media {
+    right: 50px;
+    bottom: 7px;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1000px) {
+  .bottom-nav .footer-comp-desc .social-media {
+    right: 15px;
+    bottom: 100px;
+  }
+}
+
+.bottom-nav .footer-comp-desc .social-media li {
+  margin: 20px 20px;
+}
+
+.bottom-nav .footer-comp-desc .social-media li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.bottom-nav .footer-comp-desc .social-media li a:hover {
+  fill: #D87D4A;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.bottom-nav .footer-comp-desc .social-media li > a > p {
+  display: none;
+}
+
+.nav {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navbar {
+  width: 85%;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+  border-bottom: 1px solid #353535;
+}
+
+.nav .navbar .hamburger-icon {
+  fill: white;
+  width: 25px;
+}
+
+@media (min-width: 1000px) {
+  .nav .navbar .hamburger-icon {
+    display: none;
+  }
+}
+
+.nav .navbar .home-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .navbar .home-link .company-text {
+  display: none;
+}
+
+.nav .navbar .home-link svg {
+  fill: white;
+}
+
+.nav .navbar .home-link svg:hover {
+  fill: #D87D4A;
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease;
+}
+
+.nav .navbar .desktop-nav-list {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .nav .navbar .desktop-nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: 500px;
+    list-style: none;
+  }
+}
+
+.nav .navbar .desktop-nav-list li a {
+  color: #F1F1F1;
+}
+
+.nav .navbar .desktop-nav-list li a:hover {
+  color: #D87D4A;
+  -webkit-transition: color .3s ease;
+  transition: color .3s ease;
+}
+
+.nav .navbar .cart-icon {
+  width: 28px;
+  height: 28px;
+  fill: white;
+}
+
+.nav .navbar .cart-icon:hover {
+  cursor: pointer;
+  -webkit-transition: fill .3s ease;
+  transition: fill .3s ease;
+}
+
+.mobile-nav-list {
+  position: fixed;
+  z-index: 3;
+  top: 4rem;
+  left: -1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+  padding: 10px 0px;
+  background-color: #FAFAFA;
+  -webkit-transition: left .8s ease;
+  transition: left .8s ease;
+  overflow: scroll;
+  border-radius: 0 0 8px 8px;
+}
+
+@media (min-width: 1000px) {
+  .mobile-nav-list {
+    display: none;
+  }
+}
+
+.nav-open {
+  position: fixed;
+  top: 4rem;
+  left: 0px;
+  overflow-y: scroll;
+  -webkit-transition: left .8s ease;
+  transition: left .8s ease;
+}
+
+.index-hero {
+  position: relative;
+  top: -4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-image: url("./style/assets/home/tablet/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  width: 100%;
+  height: 700px;
+}
+
+@media (min-width: 700px) {
+  .index-hero {
+    background-image: url("./style/assets/home/tablet/image-header.jpg");
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .index-hero {
+    background-image: url("./style/assets/home/desktop/image-hero.jpg");
+    background-position: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-left: 100px;
+    height: 600px;
+  }
+}
+
+.index-hero .index-hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 379px;
+  height: 400px;
+}
+
+.index-hero .index-hero-text .sup-heading {
+  color: #7e7e7e;
+}
+
+.index-hero .index-hero-text .sub-text {
+  color: #7e7e7e;
+}
+
+@media (min-width: 1000px) {
+  .index-hero .index-hero-text {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+    margin-top: 40px;
+  }
+}
+
+.earphones-hero, .headphones-hero, .speakers-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.suggested-products {
+  width: 100%;
+  margin: 0 auto 100px auto;
+  max-width: 1150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+@media (min-width: 700px) {
+  .suggested-products {
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.suggested-products .suggested-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 0 auto 20px auto;
+  height: 300px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .suggested-products .suggested-product {
+    width: 223px;
+    height: 471px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .suggested-products .suggested-product {
+    width: 350px;
+    margin: 0 auto;
+  }
+}
+
+.suggested-products .mark-one {
+  margin: 0;
+}
+
+.suggested-products .mark-one .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 150px;
+  background: url("./style/assets/shared/mobile/image-xx99-mark-one-headphones.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .suggested-products .mark-one .product-image {
+    height: 318px;
+    max-width: none;
+    background: url("./style/assets/shared/tablet/image-xx99-mark-one-headphones.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .suggested-products .mark-one .product-image {
+    height: 318px;
+    background: url("./style/assets/shared/desktop/image-xx99-mark-one-headphones.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.suggested-products .mark-two {
+  margin: 0;
+}
+
+.suggested-products .mark-two .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 150px;
+  background: url("./style/assets/shared/mobile/image-xx99-mark-two-headphones.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .suggested-products .mark-two .product-image {
+    height: 318px;
+    max-width: none;
+    background: url("./style/assets/shared/tablet/image-xx99-mark-two-headphones.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .suggested-products .mark-two .product-image {
+    height: 318px;
+    background: url("./style/assets/shared/desktop/image-xx99-mark-two-headphones.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.suggested-products .xx59 {
+  margin: 0;
+}
+
+.suggested-products .xx59 .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 150px;
+  background: url("./style/assets/shared/mobile/image-xx59-headphones.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .suggested-products .xx59 .product-image {
+    height: 318px;
+    max-width: none;
+    background: url("./style/assets/shared/tablet/image-xx59-headphones.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .suggested-products .xx59 .product-image {
+    height: 318px;
+    background: url("./style/assets/shared/desktop/image-xx59-headphones.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.suggested-products .zx7 {
+  margin: 0;
+}
+
+.suggested-products .zx7 .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 150px;
+  background: url("./style/assets/shared/mobile/image-zx7-speaker.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .suggested-products .zx7 .product-image {
+    height: 318px;
+    max-width: none;
+    background: url("./style/assets/shared/tablet/image-zx7-speaker.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .suggested-products .zx7 .product-image {
+    height: 318px;
+    background: url("./style/assets/shared/desktop/image-zx7-speaker.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.suggested-products .zx9 {
+  margin: 0;
+}
+
+.suggested-products .zx9 .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 150px;
+  background: url("./style/assets/shared/mobile/image-zx9-speaker.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .suggested-products .zx9 .product-image {
+    height: 318px;
+    max-width: none;
+    background: url("./style/assets/shared/tablet/image-zx9-speaker.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .suggested-products .zx9 .product-image {
+    height: 318px;
+    background: url("./style/assets/shared/desktop/image-zx9-speaker.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.primary-btn, .secondary-btn, .tertiary-btn, .quaternary-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+}
+
+.primary-btn:hover, .secondary-btn:hover, .tertiary-btn:hover, .quaternary-btn:hover {
+  cursor: pointer;
+}
+
+.primary-btn, .secondary-btn, .quaternary-btn {
+  width: 160px;
+  height: 48px;
+}
+
+.primary-btn {
+  background: #D87D4A;
+  color: #FFFFFF;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.primary-btn:hover {
+  background: #FBAF85;
+}
+
+.secondary-btn {
+  color: #000000;
+  background: transparent;
+  border: 1px solid #000000;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.secondary-btn:hover {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.tertiary-btn {
+  width: 80px;
+  height: 20px;
+  background: transparent;
+  color: #101010;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.tertiary-btn svg {
+  margin-left: 10px;
+}
+
+.quaternary-btn {
+  background-color: #000000;
+  color: #FFFFFF;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.quaternary-btn:hover {
+  background-color: #4c4c4c;
+}
+
+.category-links {
+  width: 90%;
+  max-width: 1100px;
+  height: 800px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+@media (max-width: 1100px) {
+  .category-links {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 700px) {
+  .category-links {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+.headphones-link,
+.speakers-link,
+.earphones-link {
+  position: relative;
+  width: 100%;
+  max-width: 327px;
+  height: 217px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 10px 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.headphones-link a,
+.speakers-link a,
+.earphones-link a {
+  display: block;
+  width: inherit;
+  height: 165px;
+  background-color: #F1F1F1;
+  color: black;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.headphones-link a img,
+.speakers-link a img,
+.earphones-link a img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 150px;
+  height: auto;
+}
+
+.headphones-link a .link-text,
+.speakers-link a .link-text,
+.earphones-link a .link-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: inherit;
+  width: inherit;
+  padding-bottom: 20px;
+}
+
+.headphones-link a .link-text .shop-btn,
+.speakers-link a .link-text .shop-btn,
+.earphones-link a .link-text .shop-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 60px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 10px;
+  color: #4c4c4c;
+}
+
+.headphones-link a .link-text .shop-btn:hover,
+.speakers-link a .link-text .shop-btn:hover,
+.earphones-link a .link-text .shop-btn:hover {
+  cursor: pointer;
+}
+
+.headphones-link a .link-text .shop-btn span,
+.speakers-link a .link-text .shop-btn span,
+.earphones-link a .link-text .shop-btn span {
+  position: relative;
+  margin-top: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+}
+
+.headphones-link a .link-text .shop-btn span img,
+.speakers-link a .link-text .shop-btn span img,
+.earphones-link a .link-text .shop-btn span img {
+  width: 10px;
+}
+
+@media (min-width: 700px) {
+  .headphones-link,
+  .speakers-link,
+  .earphones-link {
+    width: 225px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+}
+
+@media (min-width: 1000px) {
+  .headphones-link,
+  .speakers-link,
+  .earphones-link {
+    width: 100%;
+    max-width: 327px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+}
+
+.earphones-link a .earphones-image {
+  top: 10px;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  height: 724px;
+  margin: 50px auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .product {
+    height: 650px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product {
+    height: 480px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.product .product-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 60%;
+  max-width: 327px;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .product .product-description {
+    max-width: 689px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product .product-description {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 50%;
+    height: 80%;
+    max-width: 445px;
+    text-align: left;
+  }
+}
+
+.product .product-description .sup-header {
+  color: #D87D4A;
+}
+
+.product .product-description .sub-text {
+  max-width: 550px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 1000px) {
+  .product:nth-child(3) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+.mark-two-headphones .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 352px;
+  background: url("./style/assets/category-headphones/mobile/image-xx99-mark-two.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .mark-two-headphones .product-image {
+    max-width: 689px;
+    background: url("./style/assets/category-headphones/tablet/image-xx99-mark-two.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark-two-headphones .product-image {
+    max-width: 400px;
+    height: 400px;
+    background: url("./style/assets/category-headphones/desktop/image-xx99-mark-two.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.mark-two-headphones .title {
+  width: auto;
+  max-width: 300px;
+}
+
+.mark-one-headphones .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 352px;
+  background: url("./style/assets/category-headphones/mobile/image-xx99-mark-one.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .mark-one-headphones .product-image {
+    max-width: 689px;
+    background: url("./style/assets/category-headphones/tablet/image-xx99-mark-one.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark-one-headphones .product-image {
+    max-width: 400px;
+    height: 400px;
+    background: url("./style/assets/category-headphones/desktop/image-xx99-mark-one.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.mark-one-headphones .title {
+  width: auto;
+  max-width: 300px;
+}
+
+.xx59-headphones .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 352px;
+  background: url("./style/assets/category-headphones/mobile/image-xx59.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .xx59-headphones .product-image {
+    max-width: 689px;
+    background: url("./style/assets/category-headphones/tablet/image-xx59.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .xx59-headphones .product-image {
+    max-width: 400px;
+    height: 400px;
+    background: url("./style/assets/category-headphones/desktop/image-xx59.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.xx59-headphones .title {
+  width: auto;
+  max-width: 200px;
+}
+
+.yx1-earphones .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 352px;
+  background: url("./style/assets/category-earphones/mobile/image-yx1-earphones.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .yx1-earphones .product-image {
+    max-width: 689px;
+    background: url("./style/assets/category-earphones/tablet/image-yx1-earphones.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .yx1-earphones .product-image {
+    max-width: 400px;
+    height: 400px;
+    background: url("./style/assets/category-earphones/desktop/image-yx1-earphones.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.yx1-earphones .title {
+  width: auto;
+  max-width: 300px;
+}
+
+.zx9-speaker .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 352px;
+  background: url("./style/assets/category-speakers/mobile/image-zx9.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker .product-image {
+    max-width: 689px;
+    background: url("./style/assets/category-speakers/tablet/image-zx9.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker .product-image {
+    max-width: 400px;
+    height: 400px;
+    background: url("./style/assets/category-speakers/desktop/image-zx9.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.zx9-speaker .title {
+  width: auto;
+  max-width: 200px;
+}
+
+.zx7-speaker .product-image {
+  width: 100%;
+  max-width: 327px;
+  height: 352px;
+  background: url("./style/assets/category-speakers/mobile/image-zx7.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+@media (min-width: 700px) {
+  .zx7-speaker .product-image {
+    max-width: 689px;
+    background: url("./style/assets/category-speakers/tablet/image-zx7.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx7-speaker .product-image {
+    max-width: 400px;
+    height: 400px;
+    background: url("./style/assets/category-speakers/desktop/image-zx7.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.zx7-speaker .title {
+  width: auto;
+  max-width: 200px;
+}
+
+.yx1-earphones-promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  max-width: 1100px;
+  height: 425px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .yx1-earphones-promotion {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 320px;
+  }
+}
+
+.yx1-earphones-promotion .yx1-earphones-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background-image: url("./style/assets/home/mobile/image-earphones-yx1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .yx1-earphones-promotion .yx1-earphones-image {
+    width: 49%;
+    height: 320px;
+    background-image: url("./style/assets/home/tablet/image-earphones-yx1.jpg");
+  }
+}
+
+@media (min-width: 1000px) {
+  .yx1-earphones-promotion .yx1-earphones-image {
+    background-image: url("./style/assets/home/desktop/image-earphones-yx1.jpg");
+  }
+}
+
+.yx1-earphones-promotion .yx1-earphones-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 200px;
+  padding-left: 40px;
+  border-radius: 10px;
+  background-color: #F1F1F1;
+}
+
+@media (min-width: 700px) {
+  .yx1-earphones-promotion .yx1-earphones-cta {
+    width: 49%;
+    height: 320px;
+  }
+}
+
+.zx7-speaker-promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 320px;
+  background-image: url("./style/assets/home/mobile/image-speaker-zx7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .zx7-speaker-promotion {
+    background-image: url("./style/assets/home/tablet/image-speaker-zx7.jpg");
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx7-speaker-promotion {
+    background-image: url("./style/assets/home/desktop/image-speaker-zx7.jpg");
+  }
+}
+
+.zx7-speaker-promotion .zx7-speaker-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 130px;
+  margin-left: 20px;
+}
+
+@media (min-width: 700px) {
+  .zx7-speaker-promotion .zx7-speaker-text {
+    margin-left: 40px;
+  }
+}
+
+.zx9-speaker-promotion {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 90%;
+  max-width: 1100px;
+  height: 600px;
+  margin: 100px auto 50px auto;
+  background-color: #D87D4A;
+  border-radius: 10px;
+  background-image: url("./style/assets/home/desktop/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: 575px auto;
+  background-position: center -150px;
+  overflow: hidden;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker-promotion {
+    height: 720px;
+    background-size: 800px;
+    background-position: center -210px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker-promotion {
+    height: 500px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-size: 900px;
+    background-position: -180px -15px;
+  }
+}
+
+.zx9-speaker-promotion img {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 160px;
+  height: auto;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker-promotion img {
+    top: 50px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker-promotion img {
+    top: 143px;
+    left: 100px;
+    -webkit-transform: none;
+            transform: none;
+    width: 300px;
+  }
+}
+
+.zx9-speaker-promotion .zx9-speaker-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  width: 400px;
+  height: 380px;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker-promotion .zx9-speaker-text {
+    height: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker-promotion .zx9-speaker-text {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    height: 350px;
+    width: 415px;
+    margin: 40px 100px 0 0;
+  }
+}
+
+.zx9-speaker-promotion .zx9-speaker-text h1 {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker-promotion .zx9-speaker-text h1 {
+    text-align: left;
+    margin: 0;
+  }
+}
+
+.zx9-speaker-promotion .zx9-speaker-text p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker-promotion .zx9-speaker-text p {
+    width: auto;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.collage-grid-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 150px auto 100px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.4fr 0.4fr 1fr;
+      grid-template-rows: 0.4fr 0.4fr 1fr;
+  gap: 3px;
+      grid-template-areas: "img-1" "img-2" "img-3";
+}
+
+@media (min-width: 700px) {
+  .collage-grid-container {
+    max-width: 700px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.5fr 0.7fr;
+        grid-template-columns: 0.5fr 0.7fr;
+    -ms-grid-rows: 0.4fr 0.4fr;
+        grid-template-rows: 0.4fr 0.4fr;
+    gap: 5px;
+    grid-auto-flow: row;
+        grid-template-areas: "img-1 img-3" "img-2 img-3";
+  }
+}
+
+@media (min-width: 1000px) {
+  .collage-grid-container {
+    max-width: 1100px;
+  }
+}
+
+.collage-grid-container .image-1-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img-1;
+  width: 100%;
+  max-width: 327px;
+  height: 174px;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .collage-grid-container .image-1-container {
+    max-width: 277px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .collage-grid-container .image-1-container {
+    max-width: 445px;
+    height: 280px;
+  }
+}
+
+.collage-grid-container .image-2-container {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img-2;
+  width: 100%;
+  max-width: 327px;
+  height: 174px;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .collage-grid-container .image-2-container {
+    max-width: 277px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .collage-grid-container .image-2-container {
+    max-width: 445px;
+    height: 280px;
+  }
+}
+
+.collage-grid-container .image-3-container {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img-3;
+  width: 100%;
+  max-width: 327px;
+  height: 353px;
+  margin: 0 auto;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .collage-grid-container .image-3-container {
+    max-width: 395px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .collage-grid-container .image-3-container {
+    max-width: 635px;
+    height: 565px;
+  }
+}
+
+.mark-two-headphones-collage .image-1-container {
+  background: url("./style/assets/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .mark-two-headphones-collage .image-1-container {
+    background: url("./style/assets/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark-two-headphones-collage .image-1-container {
+    background: url("./style/assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.mark-two-headphones-collage .image-2-container {
+  background: url("./style/assets/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .mark-two-headphones-collage .image-2-container {
+    background: url("./style/assets/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark-two-headphones-collage .image-2-container {
+    background: url("./style/assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.mark-two-headphones-collage .image-3-container {
+  background: url("./style/assets/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .mark-two-headphones-collage .image-3-container {
+    background: url("./style/assets/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark-two-headphones-collage .image-3-container {
+    background: url("./style/assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.mark-one-headphones-collage .image-1-container {
+  background: url("./style/assets/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .mark-one-headphones-collage .image-1-container {
+    background: url("./style/assets/product-xx99-mark-one-headphones/tablet/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark-one-headphones-collage .image-1-container {
+    background: url("./style/assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.mark-one-headphones-collage .image-2-container {
+  background: url("./style/assets/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .mark-one-headphones-collage .image-2-container {
+    background: url("./style/assets/product-xx99-mark-one-headphones/tablet/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark-one-headphones-collage .image-2-container {
+    background: url("./style/assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.mark-one-headphones-collage .image-3-container {
+  background: url("./style/assets/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .mark-one-headphones-collage .image-3-container {
+    background: url("./style/assets/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark-one-headphones-collage .image-3-container {
+    background: url("./style/assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.xx59-headphones-collage .image-1-container {
+  background: url("./style/assets/product-xx59-headphones/mobile/image-gallery-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .xx59-headphones-collage .image-1-container {
+    background: url("./style/assets/product-xx59-headphones/tablet/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .xx59-headphones-collage .image-1-container {
+    background: url("./style/assets/product-xx59-headphones/desktop/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.xx59-headphones-collage .image-2-container {
+  background: url("./style/assets/product-xx59-headphones/mobile/image-gallery-2.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .xx59-headphones-collage .image-2-container {
+    background: url("./style/assets/product-xx59-headphones/tablet/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .xx59-headphones-collage .image-2-container {
+    background: url("./style/assets/product-xx59-headphones/desktop/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.xx59-headphones-collage .image-3-container {
+  background: url("./style/assets/product-xx59-headphones/mobile/image-gallery-3.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .xx59-headphones-collage .image-3-container {
+    background: url("./style/assets/product-xx59-headphones/tablet/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .xx59-headphones-collage .image-3-container {
+    background: url("./style/assets/product-xx59-headphones/desktop/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.zx9-speaker-collage .image-1-container {
+  background: url("./style/assets/product-zx9-speaker/mobile/image-gallery-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker-collage .image-1-container {
+    background: url("./style/assets/product-zx9-speaker/tablet/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker-collage .image-1-container {
+    background: url("./style/assets/product-zx9-speaker/desktop/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.zx9-speaker-collage .image-2-container {
+  background: url("./style/assets/product-zx9-speaker/mobile/image-gallery-2.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker-collage .image-2-container {
+    background: url("./style/assets/product-zx9-speaker/tablet/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker-collage .image-2-container {
+    background: url("./style/assets/product-zx9-speaker/desktop/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.zx9-speaker-collage .image-3-container {
+  background: url("./style/assets/product-zx9-speaker/mobile/image-gallery-3.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker-collage .image-3-container {
+    background: url("./style/assets/product-zx9-speaker/tablet/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker-collage .image-3-container {
+    background: url("./style/assets/product-zx9-speaker/desktop/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.zx7-speaker-collage .image-1-container {
+  background: url("./style/assets/product-zx7-speaker/mobile/image-gallery-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .zx7-speaker-collage .image-1-container {
+    background: url("./style/assets/product-zx7-speaker/tablet/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx7-speaker-collage .image-1-container {
+    background: url("./style/assets/product-zx7-speaker/desktop/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.zx7-speaker-collage .image-2-container {
+  background: url("./style/assets/product-zx7-speaker/mobile/image-gallery-2.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .zx7-speaker-collage .image-2-container {
+    background: url("./style/assets/product-zx7-speaker/tablet/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx7-speaker-collage .image-2-container {
+    background: url("./style/assets/product-zx7-speaker/desktop/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.zx7-speaker-collage .image-3-container {
+  background: url("./style/assets/product-zx7-speaker/mobile/image-gallery-3.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .zx7-speaker-collage .image-3-container {
+    background: url("./style/assets/product-zx7-speaker/tablet/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx7-speaker-collage .image-3-container {
+    background: url("./style/assets/product-zx7-speaker/desktop/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.yx1-earphones-collage .image-1-container {
+  background: url("./style/assets/product-yx1-earphones/mobile/image-gallery-1.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .yx1-earphones-collage .image-1-container {
+    background: url("./style/assets/product-yx1-earphones/tablet/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .yx1-earphones-collage .image-1-container {
+    background: url("./style/assets/product-yx1-earphones/desktop/image-gallery-1.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.yx1-earphones-collage .image-2-container {
+  background: url("./style/assets/product-yx1-earphones/mobile/image-gallery-2.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 700px) {
+  .yx1-earphones-collage .image-2-container {
+    background: url("./style/assets/product-yx1-earphones/tablet/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .yx1-earphones-collage .image-2-container {
+    background: url("./style/assets/product-yx1-earphones/desktop/image-gallery-2.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.yx1-earphones-collage .image-3-container {
+  background: url("./style/assets/product-yx1-earphones/mobile/image-gallery-3.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 700px) {
+  .yx1-earphones-collage .image-3-container {
+    background: url("./style/assets/product-yx1-earphones/tablet/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1000px) {
+  .yx1-earphones-collage .image-3-container {
+    background: url("./style/assets/product-yx1-earphones/desktop/image-gallery-3.jpg") no-repeat;
+    background-size: cover;
+  }
+}
+
+.return-btn {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 40px;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+}
+
+.return-btn a {
+  color: #000000;
+}
+
+@media (min-width: 700px) {
+  .return-btn {
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .return-btn {
+    margin-left: 50px;
+  }
+}
+
+.return-btn:hover {
+  cursor: pointer;
+}
+
+.individual-product-layout {
+  width: 90%;
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .individual-product-layout {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.individual-product-layout .product-text {
+  width: 90%;
+  max-width: 327px;
+  height: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .individual-product-layout .product-text {
+    max-width: 445px;
+    height: 420px;
+    margin-left: 10px;
+  }
+}
+
+.individual-product-layout .product-text .sup-heading {
+  color: #D87D4A;
+}
+
+.individual-product-layout .product-text h2 {
+  max-width: 250px;
+}
+
+.individual-product-layout .product-text .product-price {
+  font-size: 18px;
+}
+
+.individual-product-layout .product-text .sub-text {
+  color: #7e7e7e;
+}
+
+.individual-product-layout .add-to-cart {
+  width: 100%;
+  max-width: 327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.individual-product-layout .add-to-cart .quantity-selector {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.individual-product-layout .add-to-cart .quantity-selector .minus-btn,
+.individual-product-layout .add-to-cart .quantity-selector .plus-btn {
+  width: 40px;
+  height: 48px;
+  background-color: #F1F1F1;
+  color: #7e7e7e;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.individual-product-layout .add-to-cart .quantity-selector .minus-btn:hover,
+.individual-product-layout .add-to-cart .quantity-selector .plus-btn:hover {
+  cursor: pointer;
+}
+
+.individual-product-layout .add-to-cart .quantity-selector input {
+  width: 40px;
+  height: 48px;
+  background-color: #F1F1F1;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-weight: 800;
+}
+
+.product-features {
+  width: 90%;
+  margin: 70px auto 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .product-features {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product-features {
+    width: 90%;
+    max-width: 1100px;
+    margin: 100px auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.product-features .features {
+  width: 100%;
+  max-width: 327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .product-features .features {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product-features .features {
+    width: 635px;
+    margin: 0;
+  }
+}
+
+.product-features .features h3 {
+  margin-bottom: 20px;
+}
+
+.product-features .features p {
+  color: #7e7e7e;
+}
+
+.product-features .in-the-box {
+  width: 100%;
+  max-width: 327px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0 0 0;
+}
+
+@media (min-width: 700px) {
+  .product-features .in-the-box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 600px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product-features .in-the-box {
+    max-width: 200px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.product-features .in-the-box h3 {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1000px) {
+  .product-features .in-the-box h3 {
+    margin: 0;
+  }
+}
+
+.product-features .in-the-box ul {
+  list-style: none;
+}
+
+@media (min-width: 1000px) {
+  .product-features .in-the-box ul {
+    margin-top: 50px;
+  }
+}
+
+.product-features .in-the-box ul li {
+  margin: 10px 0;
+  color: #7e7e7e;
+}
+
+.product-features .in-the-box ul li span {
+  color: #D87D4A;
+  margin-right: 10px;
+  font-weight: 800;
+}
+
+.mark2-headphones .product-image .mobile-image {
+  display: block;
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .mark2-headphones .product-image .mobile-image {
+    display: none;
+  }
+}
+
+.mark2-headphones .product-image .tablet-image {
+  display: none;
+  max-width: 281px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .mark2-headphones .product-image .tablet-image {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark2-headphones .product-image .tablet-image {
+    display: none;
+  }
+}
+
+.mark2-headphones .product-image .desktop-image {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .mark2-headphones .product-image .desktop-image {
+    display: block;
+    max-width: 400px;
+    height: 420px;
+    border-radius: 8px;
+  }
+}
+
+.mark1-headphones .product-image .mobile-image {
+  display: block;
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .mark1-headphones .product-image .mobile-image {
+    display: none;
+  }
+}
+
+.mark1-headphones .product-image .tablet-image {
+  display: none;
+  max-width: 281px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .mark1-headphones .product-image .tablet-image {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mark1-headphones .product-image .tablet-image {
+    display: none;
+  }
+}
+
+.mark1-headphones .product-image .desktop-image {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .mark1-headphones .product-image .desktop-image {
+    display: block;
+    max-width: 400px;
+    height: 420px;
+    border-radius: 8px;
+  }
+}
+
+.xx59-headphones .product-image .mobile-image {
+  display: block;
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .xx59-headphones .product-image .mobile-image {
+    display: none;
+  }
+}
+
+.xx59-headphones .product-image .tablet-image {
+  display: none;
+  max-width: 281px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .xx59-headphones .product-image .tablet-image {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .xx59-headphones .product-image .tablet-image {
+    display: none;
+  }
+}
+
+.xx59-headphones .product-image .desktop-image {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .xx59-headphones .product-image .desktop-image {
+    display: block;
+    max-width: 400px;
+    height: 420px;
+    border-radius: 8px;
+  }
+}
+
+.zx9-speaker .product-image .mobile-image {
+  display: block;
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker .product-image .mobile-image {
+    display: none;
+  }
+}
+
+.zx9-speaker .product-image .tablet-image {
+  display: none;
+  max-width: 281px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .zx9-speaker .product-image .tablet-image {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker .product-image .tablet-image {
+    display: none;
+  }
+}
+
+.zx9-speaker .product-image .desktop-image {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .zx9-speaker .product-image .desktop-image {
+    display: block;
+    max-width: 400px;
+    height: 420px;
+    border-radius: 8px;
+  }
+}
+
+.zx7-speaker .product-image .mobile-image {
+  display: block;
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .zx7-speaker .product-image .mobile-image {
+    display: none;
+  }
+}
+
+.zx7-speaker .product-image .tablet-image {
+  display: none;
+  max-width: 281px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .zx7-speaker .product-image .tablet-image {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .zx7-speaker .product-image .tablet-image {
+    display: none;
+  }
+}
+
+.zx7-speaker .product-image .desktop-image {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .zx7-speaker .product-image .desktop-image {
+    display: block;
+    max-width: 400px;
+    height: 420px;
+    border-radius: 8px;
+  }
+}
+
+.yx1-earphones .product-image .mobile-image {
+  display: block;
+  width: 100%;
+  max-width: 327px;
+  height: 327px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .yx1-earphones .product-image .mobile-image {
+    display: none;
+  }
+}
+
+.yx1-earphones .product-image .tablet-image {
+  display: none;
+  max-width: 281px;
+  height: 450px;
+  border-radius: 8px;
+}
+
+@media (min-width: 700px) {
+  .yx1-earphones .product-image .tablet-image {
+    display: block;
+  }
+}
+
+@media (min-width: 1000px) {
+  .yx1-earphones .product-image .tablet-image {
+    display: none;
+  }
+}
+
+.yx1-earphones .product-image .desktop-image {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .yx1-earphones .product-image .desktop-image {
+    display: block;
+    max-width: 400px;
+    height: 420px;
+    border-radius: 8px;
+  }
+}
+
+.order-complete-faded-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.order-complete {
+  position: fixed;
+  top: 65px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 540px;
+  background-color: #FFFFFF;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 600px;
+  border-radius: 10px;
+  border: 1px solid #D87D4A;
+  padding: 10px 0;
+}
+
+@media (min-width: 700px) {
+  .order-complete {
+    top: 15px;
+    min-height: 540px;
+  }
+}
+
+.order-complete svg {
+  fill: #D87D4A;
+  margin-left: 5%;
+}
+
+.order-complete h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0 10px 5%;
+}
+
+.order-complete p {
+  margin-left: 5%;
+  font-weight: 200;
+}
+
+.order-complete .items-ordered-accordian {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #F1F1F1;
+  -webkit-transition: all ease 3s;
+  transition: all ease 3s;
+}
+
+@media (min-width: 700px) {
+  .order-complete .items-ordered-accordian {
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .order-complete .items-ordered-accordian {
+    width: 100%;
+  }
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  overflow-y: scroll;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: black;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list::-webkit-scrollbar-thumb {
+  background-color: #D87D4A;
+  border-radius: 50px;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered {
+  width: 100%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3px auto;
+  padding: 10px 0;
+  border-bottom: 1px solid #cfcfcf;
+  border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 700px) {
+  .order-complete .items-ordered-accordian .ordered-items-list .item-ordered {
+    width: 95%;
+  }
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .order-complete .items-ordered-accordian .ordered-items-list .item-ordered img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .nameAndPrice {
+  margin-left: 5px;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .nameAndPrice .ordered-item-name {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0;
+  font-size: 13px;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .nameAndPrice .ordered-item-price {
+  color: #7e7e7e;
+  font-weight: bold;
+  margin: 0;
+  font-size: 13px;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .ordered-item-quantity {
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .ordered-item-quantity span {
+  text-align: center;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-list .item-ordered .ordered-item-quantity input {
+  border: none;
+  width: 25px;
+  color: #7e7e7e;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-grandTotal {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  color: #F1F1F1;
+  border-radius: 0 10px 10px 0;
+  background-color: #000000;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-grandTotal .grandTotal-title {
+  position: absolute;
+  bottom: 40px;
+  color: #cfcfcf;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-grandTotal .grandTotal-value {
+  position: absolute;
+  bottom: 15px;
+  font-weight: bold;
+}
+
+.order-complete .items-ordered-accordian .ordered-items-grandTotal p {
+  margin: 0 0 0 20px;
+}
+
+.order-complete .return-home-btn {
+  width: 90%;
+  margin: 10px auto;
+}
+
+form {
+  width: 100%;
+  max-width: 327px;
+  margin: -15px auto 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 700px) {
+  form {
+    max-width: 500px;
+    margin: -10px 0 0 50px;
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  form {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 1240px) {
+  form {
+    max-width: 730px;
+  }
+}
+
+form fieldset {
+  border: none;
+}
+
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form input::-webkit-input-placeholder {
+  color: #cfcfcf;
+  font-weight: 800;
+}
+
+form input:-ms-input-placeholder {
+  color: #cfcfcf;
+  font-weight: 800;
+}
+
+form input::-ms-input-placeholder {
+  color: #cfcfcf;
+  font-weight: 800;
+}
+
+form input::placeholder {
+  color: #cfcfcf;
+  font-weight: 800;
+}
+
+form .error-message {
+  display: none;
+}
+
+form .form-title {
+  padding: 10px 18px;
+}
+
+@media (min-width: 700px) {
+  form .form-title {
+    padding: 0;
+    margin-left: -3px;
+  }
+}
+
+form .billing-info,
+form .shipping-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 0;
+}
+
+@media (min-width: 700px) {
+  form .billing-info,
+  form .shipping-info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+form .billing-info legend,
+form .shipping-info legend {
+  font-weight: 800;
+  color: #D87D4A;
+  margin-left: 23px;
+}
+
+@media (min-width: 700px) {
+  form .billing-info legend,
+  form .shipping-info legend {
+    margin-left: 0;
+  }
+}
+
+form .billing-info .nameInput,
+form .billing-info .emailInput,
+form .billing-info .phoneInput,
+form .billing-info .cityInput,
+form .billing-info .countryInput,
+form .billing-info .zipCodeInput,
+form .shipping-info .nameInput,
+form .shipping-info .emailInput,
+form .shipping-info .phoneInput,
+form .shipping-info .cityInput,
+form .shipping-info .countryInput,
+form .shipping-info .zipCodeInput {
+  width: 100%;
+  max-width: 280px;
+  margin: 20px 0 0 0;
+}
+
+@media (min-width: 700px) {
+  form .billing-info .nameInput,
+  form .billing-info .emailInput,
+  form .billing-info .phoneInput,
+  form .billing-info .cityInput,
+  form .billing-info .countryInput,
+  form .billing-info .zipCodeInput,
+  form .shipping-info .nameInput,
+  form .shipping-info .emailInput,
+  form .shipping-info .phoneInput,
+  form .shipping-info .cityInput,
+  form .shipping-info .countryInput,
+  form .shipping-info .zipCodeInput {
+    max-width: 309px;
+    margin: 20px 0 0 0;
+  }
+}
+
+form .billing-info .nameInput .label-message,
+form .billing-info .emailInput .label-message,
+form .billing-info .phoneInput .label-message,
+form .billing-info .cityInput .label-message,
+form .billing-info .countryInput .label-message,
+form .billing-info .zipCodeInput .label-message,
+form .shipping-info .nameInput .label-message,
+form .shipping-info .emailInput .label-message,
+form .shipping-info .phoneInput .label-message,
+form .shipping-info .cityInput .label-message,
+form .shipping-info .countryInput .label-message,
+form .shipping-info .zipCodeInput .label-message {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 10px 0;
+  font-weight: 800;
+}
+
+form .billing-info .nameInput .label-message p,
+form .billing-info .emailInput .label-message p,
+form .billing-info .phoneInput .label-message p,
+form .billing-info .cityInput .label-message p,
+form .billing-info .countryInput .label-message p,
+form .billing-info .zipCodeInput .label-message p,
+form .shipping-info .nameInput .label-message p,
+form .shipping-info .emailInput .label-message p,
+form .shipping-info .phoneInput .label-message p,
+form .shipping-info .cityInput .label-message p,
+form .shipping-info .countryInput .label-message p,
+form .shipping-info .zipCodeInput .label-message p {
+  margin: 0;
+  color: red;
+  font-weight: 600;
+}
+
+form .billing-info .nameInput input,
+form .billing-info .emailInput input,
+form .billing-info .phoneInput input,
+form .billing-info .cityInput input,
+form .billing-info .countryInput input,
+form .billing-info .zipCodeInput input,
+form .shipping-info .nameInput input,
+form .shipping-info .emailInput input,
+form .shipping-info .phoneInput input,
+form .shipping-info .cityInput input,
+form .shipping-info .countryInput input,
+form .shipping-info .zipCodeInput input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #cfcfcf;
+  max-width: 280px;
+  height: 56px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+form .billing-info .nameInput input:focus,
+form .billing-info .emailInput input:focus,
+form .billing-info .phoneInput input:focus,
+form .billing-info .cityInput input:focus,
+form .billing-info .countryInput input:focus,
+form .billing-info .zipCodeInput input:focus,
+form .shipping-info .nameInput input:focus,
+form .shipping-info .emailInput input:focus,
+form .shipping-info .phoneInput input:focus,
+form .shipping-info .cityInput input:focus,
+form .shipping-info .countryInput input:focus,
+form .shipping-info .zipCodeInput input:focus {
+  outline: 1px solid #D87D4A;
+  caret-color: #D87D4A;
+}
+
+@media (min-width: 700px) {
+  form .billing-info .nameInput input,
+  form .billing-info .emailInput input,
+  form .billing-info .phoneInput input,
+  form .billing-info .cityInput input,
+  form .billing-info .countryInput input,
+  form .billing-info .zipCodeInput input,
+  form .shipping-info .nameInput input,
+  form .shipping-info .emailInput input,
+  form .shipping-info .phoneInput input,
+  form .shipping-info .cityInput input,
+  form .shipping-info .countryInput input,
+  form .shipping-info .zipCodeInput input {
+    max-width: 309px;
+    margin: 0;
+  }
+}
+
+form .billing-info .addressInput,
+form .shipping-info .addressInput {
+  width: 100%;
+  max-width: 280px;
+  margin: 20px 0 0 0;
+}
+
+@media (min-width: 700px) {
+  form .billing-info .addressInput,
+  form .shipping-info .addressInput {
+    max-width: none;
+  }
+}
+
+form .billing-info .addressInput .label-message,
+form .shipping-info .addressInput .label-message {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 10px 0;
+  font-weight: 800;
+}
+
+form .billing-info .addressInput .label-message label,
+form .shipping-info .addressInput .label-message label {
+  font-weight: 800;
+}
+
+form .billing-info .addressInput .label-message p,
+form .shipping-info .addressInput .label-message p {
+  margin: 0;
+  color: red;
+  font-weight: 600;
+}
+
+form .billing-info .addressInput input,
+form .shipping-info .addressInput input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #cfcfcf;
+  height: 56px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+form .billing-info .addressInput input:focus,
+form .shipping-info .addressInput input:focus {
+  outline: 1px solid #D87D4A;
+  caret-color: #D87D4A;
+}
+
+form .payment-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 0;
+}
+
+@media (min-width: 700px) {
+  form .payment-info {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+form .payment-info legend {
+  font-weight: 800;
+  color: #D87D4A;
+  margin-left: 23px;
+}
+
+@media (min-width: 700px) {
+  form .payment-info legend {
+    margin-left: 0;
+  }
+}
+
+form .payment-info .payment-type {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+}
+
+@media (min-width: 700px) {
+  form .payment-info .payment-type {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+form .payment-info .payment-type p {
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  font-weight: 800;
+}
+
+@media (min-width: 700px) {
+  form .payment-info .payment-type p {
+    margin: 0;
+  }
+}
+
+form .payment-info .payment-type .payment-methods {
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+}
+
+@media (min-width: 700px) {
+  form .payment-info .payment-type .payment-methods {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 50%;
+    margin-top: 0;
+  }
+}
+
+form .payment-info .payment-type .payment-methods li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 10px 0;
+  border: 1px solid #cfcfcf;
+  max-width: 280px;
+  height: 56px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+form .payment-info .payment-type .payment-methods li:focus {
+  outline: 1px solid #D87D4A;
+  caret-color: #D87D4A;
+}
+
+form .payment-info .payment-type .payment-methods li:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  form .payment-info .payment-type .payment-methods li {
+    max-width: 309px;
+    margin: 10px 0;
+  }
+}
+
+form .payment-info .payment-type .payment-methods li .circle-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #cfcfcf;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+form .payment-info .payment-type .payment-methods li .circle-btn .inner-circle {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+form .payment-info .payment-type .payment-methods li p {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+}
+
+form .payment-info .e-money-details {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  form .payment-info .e-money-details {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+form .payment-info .e-money-details .e-money-num,
+form .payment-info .e-money-details .e-money-pin {
+  width: 100%;
+  max-width: 280px;
+}
+
+@media (min-width: 700px) {
+  form .payment-info .e-money-details .e-money-num,
+  form .payment-info .e-money-details .e-money-pin {
+    max-width: 309px;
+  }
+}
+
+form .payment-info .e-money-details .label-message {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 10px 0;
+  font-weight: 800;
+}
+
+form .payment-info .e-money-details .label-message label {
+  font-weight: 800;
+}
+
+form .payment-info .e-money-details .label-message p {
+  margin: 0;
+  color: red;
+  font-weight: 600;
+}
+
+form .payment-info .e-money-details input {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #cfcfcf;
+  max-width: 280px;
+  height: 56px;
+  border-radius: 10px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+
+form .payment-info .e-money-details input:focus {
+  outline: 1px solid #D87D4A;
+  caret-color: #D87D4A;
+}
+
+@media (min-width: 700px) {
+  form .payment-info .e-money-details input {
+    max-width: 309px;
+    margin: 0;
+  }
+}
+
+form .payment-info .cash-details {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 200px;
+  max-width: 280px;
+  margin-top: 22px;
+}
+
+@media (min-width: 700px) {
+  form .payment-info .cash-details {
+    max-width: none;
+    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+form .payment-info .cash-details p {
+  width: 100%;
+  line-height: 25px;
+}
+
+@media (min-width: 700px) {
+  form .payment-info .cash-details p {
+    width: 77%;
+  }
+}
+
+.body-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1000px) {
+  .body-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.summary-checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 327px;
+  min-height: 388px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  border-radius: 10px;
+  margin: 50px auto 0 auto;
+}
+
+@media (min-width: 700px) {
+  .summary-checkout {
+    max-width: 500px;
+    margin: 50px 0 0 50px;
+    padding: 10px 15px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .summary-checkout {
+    max-width: 350px;
+    margin: -10px auto 0 auto;
+  }
+}
+
+.summary-checkout .cart-header {
+  width: 100%;
+  margin: 10px 0 0 30px;
+}
+
+@media (min-width: 700px) {
+  .summary-checkout .cart-header {
+    margin: 0;
+  }
+}
+
+.summary-checkout .summary-items {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px 0;
+}
+
+.summary-checkout .summary-items::-webkit-scrollbar {
+  width: .2rem;
+  background-color: transparent;
+}
+
+.summary-checkout .summary-items::-webkit-scrollbar-thumb {
+  background-color: #D87D4A;
+  border-radius: 50px;
+}
+
+.summary-checkout .summary-items .summary-row {
+  width: 92%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .summary-checkout .summary-items .summary-row {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.summary-checkout .summary-items .summary-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.summary-checkout .summary-items .summary-row .nameAndPrice {
+  margin-left: 20px;
+}
+
+.summary-checkout .summary-items .summary-row .nameAndPrice .summary-item-name {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.summary-checkout .summary-items .summary-row .nameAndPrice .summary-item-price {
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+.summary-checkout .summary-items .summary-row .summary-quantity {
+  margin-left: auto;
+  margin-right: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+.summary-checkout .summary-items .summary-row .summary-quantity input {
+  border: none;
+  width: 25px;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+.summary-checkout .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 92%;
+  height: 130px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .summary-checkout .total {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.summary-checkout .total p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  color: #7e7e7e;
+}
+
+.summary-checkout .total p span {
+  color: #000000;
+}
+
+.summary-checkout .total .grand-total-cost {
+  margin-top: auto;
+}
+
+.summary-checkout .total .grand-total-cost span {
+  color: #D87D4A;
+}
+
+.summary-checkout .pay-btn {
+  width: 92%;
+  margin: 20px auto;
+}
+
+@media (min-width: 700px) {
+  .summary-checkout .pay-btn {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+.shopping-cart {
+  position: fixed;
+  top: 63px;
+  right: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 327px;
+  height: 488px;
+  opacity: 0;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #D87D4A;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 380px) {
+  .shopping-cart {
+    right: 5%;
+    width: 360px;
+  }
+}
+
+@media (min-width: 700px) {
+  .shopping-cart {
+    width: 377px;
+  }
+}
+
+.shopping-cart .cart-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.shopping-cart .cart-header .remove-all-btn {
+  color: #7e7e7e;
+  background-color: transparent;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #7e7e7e;
+  font-weight: 500;
+}
+
+.shopping-cart .cart-header .remove-all-btn:hover {
+  cursor: pointer;
+}
+
+.shopping-cart .cart-items {
+  width: 90%;
+  margin: 0 auto;
+  height: 63%;
+  overflow-y: scroll;
+}
+
+.shopping-cart .cart-items::-webkit-scrollbar {
+  width: 0.2rem;
+  background-color: transparent;
+}
+
+.shopping-cart .cart-items::-webkit-scrollbar-thumb {
+  background-color: #D87D4A;
+  border-radius: 50px;
+}
+
+.shopping-cart .cart-items .cart-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  margin-right: 5px;
+}
+
+.shopping-cart .cart-items .cart-row img {
+  width: 50px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.shopping-cart .cart-items .cart-row .nameAndPrice {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.shopping-cart .cart-items .cart-row .cart-item-name {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.shopping-cart .cart-items .cart-row .cart-item-price {
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+.shopping-cart .cart-items .cart-row .cart-quantity-selector {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-minus-btn,
+.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-plus-btn {
+  width: 32px;
+  height: 32px;
+  background-color: #F1F1F1;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #7e7e7e;
+}
+
+.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-minus-btn:hover,
+.shopping-cart .cart-items .cart-row .cart-quantity-selector .cart-plus-btn:hover {
+  cursor: pointer;
+}
+
+.shopping-cart .cart-items .cart-row .cart-quantity-selector input {
+  width: 32px;
+  height: 32px;
+  background-color: #F1F1F1;
+  border: none;
+  outline: none;
+  text-align: center;
+  font-weight: 600;
+}
+
+.shopping-cart .total {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #7e7e7e;
+}
+
+.shopping-cart .total span {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #000000;
+}
+
+.shopping-cart .checkout-btn {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.open-cart {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4rem;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #D87D4A;
+  border-radius: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+main {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 4rem auto 0 auto;
+  padding-bottom: 40px;
+}
+
+@media (min-width: 700px) {
+  main {
+    padding-bottom: 100px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

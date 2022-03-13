@@ -1,0 +1,403 @@
+form {
+    width: 100%;
+    max-width: 327px;
+    margin: -15px auto 0 auto;
+    background-color: colorSet(base, white);
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+    @include tablet{
+        max-width: 500px;
+        margin: -10px 0 0 50px;
+        padding: 10px 15px;
+    }
+
+    @include desktop{
+        max-width: 600px;
+    }
+
+    @include desktop-large{
+        max-width: 730px;
+    }
+
+    //* All fieldsets will have the below applied *
+
+    fieldset {
+        border: none;
+    }
+
+    //* Additional general styling for inputs *
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    input::placeholder{
+        color: colorSet(base, faded-grey);
+        font-weight: 800;
+    }
+
+    .error-message {
+        display: none;
+    }
+
+    //* individual input styling *
+
+    .form-title{
+        padding: 10px 18px;
+
+        @include tablet {
+            padding: 0;
+            margin-left: -3px;
+        }
+    }
+
+    .billing-info,
+    .shipping-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        padding: 0;
+
+        @include tablet{
+            justify-content: space-between;
+        }
+
+        & legend {
+            font-weight: 800;
+            color: colorSet(accent, dark-orange);
+            margin-left: 23px;
+
+            @include tablet{
+                margin-left: 0;
+            }
+        }
+
+        & .nameInput,
+        .emailInput,
+        .phoneInput,
+        .cityInput,
+        .countryInput,
+        .zipCodeInput {
+            width: 100%;
+            max-width: 280px;
+            margin: 20px 0 0 0;
+
+            @include tablet {
+                max-width: 309px;
+                margin: 20px 0 0 0;
+            }
+
+            & .label-message {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0 10px 0;
+                font-weight: 800;
+
+                & p {
+                    margin: 0;
+                    color: red;
+                    font-weight: 600;
+                }
+            }
+
+            & input {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                border: 1px solid colorSet(base, faded-grey);
+                max-width: 280px;
+                height: 56px;
+                border-radius: 10px;
+                padding-left: 10px;
+                font-weight: 600;
+
+                &:focus {
+                    outline: 1px solid colorSet(accent, dark-orange);
+                    caret-color: colorSet(accent, dark-orange);
+                }
+
+                @include tablet{
+                    max-width: 309px;
+                    margin: 0;
+                }
+            }
+        }
+
+        & .addressInput {
+            width: 100%;
+            max-width: 280px;
+            margin: 20px 0 0 0;
+
+            @include tablet{
+                max-width: none;
+            }
+
+            & .label-message {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0 10px 0;
+                font-weight: 800;
+
+                label {
+                    font-weight: 800;
+                }
+
+                & p {
+                    margin: 0;
+                    color: red;
+                    font-weight: 600;
+                }
+            }
+
+            & input {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                border: 1px solid colorSet(base, faded-grey);
+                height: 56px;
+                border-radius: 10px;
+                padding-left: 10px;
+                font-weight: 600;
+
+                &:focus {
+                    outline: 1px solid colorSet(accent, dark-orange);
+                    caret-color: colorSet(accent, dark-orange);
+                }
+            }
+        }
+    }
+
+    //* This section has a seperate styling due to the layout and content *
+
+    & .payment-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 50px auto;
+        padding: 0;
+
+        @include tablet{
+            justify-content: space-between;
+        }
+
+        & legend {
+            font-weight: 800;
+            color: colorSet(accent, dark-orange);
+            margin-left: 23px;
+
+            @include tablet{
+                margin-left: 0;
+            }
+        }
+
+        & .payment-type {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-top: 50px;
+
+            @include tablet{
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: row;
+            }
+
+            & p {
+                width: 100%;
+                max-width: 280px;
+                margin: 0 auto;
+                font-weight: 800;
+
+                @include tablet{
+                    margin: 0;
+                }
+            }
+
+            & .payment-methods {
+                list-style: none;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 15px;
+
+                @include tablet{
+                    align-items: flex-end;
+                    width: 50%;
+                    margin-top: 0;
+                }
+
+                & li {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: 100%;
+                    padding: 0;
+                    margin: 10px 0;
+                    border: 1px solid #cfcfcf;
+                    max-width: 280px;
+                    height: 56px;
+                    border-radius: 10px;
+                    padding-left: 10px;
+                    font-weight: 600;
+
+                    &:focus {
+                        outline: 1px solid colorSet(accent, dark-orange);
+                        caret-color: colorSet(accent, dark-orange);
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    @include tablet{
+                        max-width: 309px;
+                        margin: 10px 0;
+                    }
+
+                    & .circle-btn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid #cfcfcf;
+                        border-radius: 50%;
+                        margin-right: 10px;
+
+                        & .inner-circle {
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    & p {
+                        width: fit-content;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        & .e-money-details {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+
+            @include tablet{
+                flex-direction: row;
+            }
+
+            & .e-money-num,
+            .e-money-pin {
+                width: 100%;
+                max-width: 280px;
+
+                @include tablet{
+                    max-width: 309px;
+                }
+            }
+
+            & .label-message {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0 10px 0;
+                font-weight: 800;
+
+                label {
+                    font-weight: 800;
+                }
+
+                & p {
+                    margin: 0;
+                    color: red;
+                    font-weight: 600;
+                }
+            }
+
+            & input {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                border: 1px solid #cfcfcf;
+                max-width: 280px;
+                height: 56px;
+                border-radius: 10px;
+                padding-left: 10px;
+                font-weight: 600;
+
+                &:focus {
+                    outline: 1px solid colorSet(accent, dark-orange);
+                    caret-color: colorSet(accent, dark-orange);
+                }
+
+                @include tablet{
+                    max-width: 309px;
+                    margin: 0;
+                }
+            }
+        }
+
+        & .cash-details {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 200px;
+            max-width: 280px;
+            margin-top: 22px;
+
+            @include tablet{
+                max-width: none;
+                height: auto;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+
+            & p {
+                width: 100%;
+                line-height: 25px;
+
+                @include tablet{
+                    width: 77%;
+                }
+            }
+        }
+    }
+}
+
+
+.body-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}

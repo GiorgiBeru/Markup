@@ -1,0 +1,97 @@
+.zx9-speaker-promotion{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 90%;
+    max-width: 1100px;
+    height: 600px;
+    margin: 100px auto 50px auto;
+    background-color: colorSet(accent, dark-orange);
+    border-radius: 10px;
+    background-image: url("./style/assets/home/desktop/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: 575px auto;
+    background-position: center -150px;
+    overflow: hidden;
+
+    @include tablet{
+        height: 720px;
+        background-size: 800px;
+        background-position: center -210px;
+    }
+
+    @include desktop{
+        height: 500px;
+        justify-content: end;
+        align-items: center;
+        background-size: 900px;
+        background-position: -180px -15px;
+    }
+
+
+    & img {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 160px;
+        height: auto;
+
+        @include tablet{
+            top: 50px;
+            width: 200px;
+        }
+
+        @include desktop{
+            top: 143px;
+            left: 100px;
+            transform: none;
+            width: 300px;
+        }
+    }
+
+    .zx9-speaker-text{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        width: 400px;
+        height: 380px;
+
+        @include tablet{
+            height: 400px;
+        }
+
+        @include desktop{
+            align-items: start;
+            height: 350px;
+            width: 415px;
+            margin: 40px 100px 0 0;
+        }
+
+        & h1{
+            text-align: center;
+            width: 50%;
+            margin: 0 auto;
+
+            @include desktop{
+                text-align: left;
+                margin: 0;
+            }
+        }
+
+        & p {
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+
+            @include desktop{
+                width: auto;
+                margin: 0;
+                text-align: left;
+            }
+        }
+    }
+}

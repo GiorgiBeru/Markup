@@ -1,0 +1,50 @@
+@import "./style/utilities/imports";
+@import "./style/base/imports";
+@import "./style/components/imports";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: colorSet(accent, dark-orange);
+    border-radius: 50px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+    margin: 4rem auto 0 auto;
+    padding-bottom: 40px;
+
+    @include tablet {
+        padding-bottom: 100px;
+    }
+}

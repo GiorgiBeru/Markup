@@ -1,0 +1,95 @@
+.company-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1100px;
+    height: 733px;
+    margin: 100px auto 0px auto;
+    border-radius: 10px;
+
+    @include tablet{
+        height: 633px;
+    }
+
+    @include desktop {
+        height: 490px;
+        flex-direction: row-reverse;
+    }
+
+    & .company-desc-image {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        background-image: url("./style/assets/shared/mobile/image-best-gear.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        @include tablet {
+            background-image: url("./style/assets/shared/tablet/image-best-gear.jpg");
+        }
+
+        @include desktop {
+            width: 40%;
+            height: 100%;
+            background-image: url("./style/assets/shared/desktop/image-best-gear.jpg");
+        }
+    }
+
+    & .company-desc-text {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        text-align: center;
+
+        @include tablet{
+            height: 300px;
+        }
+
+        @include desktop {
+            width: 49%;
+            height: 100%;
+            align-items: flex-start;
+        }
+
+        & .title {
+            width: 100%;
+            max-width: 327px;
+            margin: 0 auto;
+            text-align: center;
+
+            & span {
+                color: colorSet(accent, dark-orange);
+            }
+
+            @include tablet {
+                width: 480px;
+                max-width: 480px;
+            }
+
+            @include desktop {
+                width: 400px;
+                text-align: left;
+                margin: 0;
+            }
+        }
+
+        & .desc-text {
+            padding: 10px 0;
+
+            @include tablet {
+                max-width: 700px;
+            }
+
+            @include desktop{
+                max-width: 400px;
+                text-align: left;
+            }
+        }
+    }
+}

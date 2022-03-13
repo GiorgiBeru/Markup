@@ -1,0 +1,189 @@
+.order-complete-faded-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+
+.order-complete {
+    position: fixed;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    display: none;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 540px;
+    background-color: colorSet(base, white);
+    height: fit-content;
+    min-height: 600px;
+    border-radius: 10px;
+    border: 1px solid colorSet(accent, dark-orange);
+    padding: 10px 0;
+
+    @include tablet {
+        top: 15px;
+        min-height: 540px;
+    }
+
+    & svg {
+        fill: colorSet(accent, dark-orange);
+        margin-left: 5%;
+    }
+
+    & h3 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 20px 0 10px 5%;
+    }
+
+    & p {
+        margin-left: 5%;
+        font-weight: 200;
+    }
+
+    & .items-ordered-accordian {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 5px;
+        background-color: colorSet(base, light-silver);
+        transition: all ease 3s;
+
+        @include tablet{
+            height: 230px;
+        }
+
+        @media screen and (max-width: 320px){
+            width: 100%; 
+        }
+
+        & .ordered-items-list {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            width: 55%;
+            height: 100%;
+            border-radius: 10px 0 0 10px;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 0.2rem;
+                background-color: black;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: colorSet(accent, dark-orange);
+                border-radius: 50px;
+            }
+
+            & .item-ordered {
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 3px auto;
+                padding: 10px 0;
+                border-bottom: 1px solid colorSet(base, faded-grey);
+                border-radius: 0 0 10px 10px;
+
+                @include tablet {
+                    width: 95%;
+                }
+
+                & img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 10px;
+
+                    @include tablet {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                & .nameAndPrice {
+                    margin-left: 5px;
+
+                    & .ordered-item-name {
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        margin: 0;
+                        font-size: 13px;
+                    }
+
+                    & .ordered-item-price {
+                        color: colorSet(base, light-grey);
+                        font-weight: bold;
+                        margin: 0;
+                        font-size: 13px;
+                    }
+                }
+
+                & .ordered-item-quantity {
+                    margin-left: auto;
+                    width: fit-content;
+                    color: colorSet(base, light-grey);
+                    font-weight: bold;
+
+                    & span{
+                        text-align: center;
+                    }
+
+                    & input {
+                        border: none;
+                        width: 25px;
+                        color: colorSet(base, light-grey);
+                        font-weight: bold;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        & .ordered-items-grandTotal {
+            position: relative;
+            width: 45%;
+            height: 100%;
+            color: colorSet(base, light-silver);
+            border-radius: 0 10px 10px 0;
+            background-color: colorSet(base, black);
+
+            & .grandTotal-title {
+                position: absolute;
+                bottom: 40px;
+                color: colorSet(base, faded-grey);
+            }
+
+            & .grandTotal-value {
+                position: absolute;
+                bottom: 15px;
+                font-weight: bold;
+            }
+
+            & p {
+                margin: 0 0 0 20px;
+            }
+        }
+    }
+
+    & .return-home-btn {
+        width: 90%;
+        margin: 10px auto;
+    }
+}

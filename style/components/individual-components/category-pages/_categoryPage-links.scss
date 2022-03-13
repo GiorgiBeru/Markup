@@ -1,0 +1,109 @@
+.category-links {
+    width: 90%;
+    max-width: 1100px;
+    height: 800px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+    @media (max-width: 1100px) {
+        justify-content: space-evenly;
+    }
+
+    @include tablet{
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+.headphones-link,
+.speakers-link,
+.earphones-link {
+    position: relative;
+    width: 100%;
+    max-width: 327px;
+    height: 217px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 10px 0;
+    transition: all .3s ease;
+
+    & a {
+        display: block;
+        width: inherit;
+        height: 165px;
+        background-color: colorSet(base, light-silver);
+        color: black;
+        text-align: center;
+        border-radius: 8px;
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: auto;
+        }
+
+        .link-text {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            height: inherit;
+            width: inherit;
+            padding-bottom: 20px;
+
+            & .shop-btn {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                outline: none;
+                border: none;
+                background-color: transparent;
+                width: fit-content;
+                min-width: 60px;
+                height: fit-content;
+                margin-top: 10px;
+                color: colorSet(base, dark-grey);
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                & span {
+                    position: relative;
+                    margin-top: 10px;
+                    width: fit-content;
+                    height: 100%;
+
+                    & img {
+                        width: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    @include tablet {
+        width: 225px;
+        transition: all .3s ease;
+    }
+
+    @include desktop{
+        width: 100%;
+        max-width: 327px;
+        transition: all .3s ease;
+    }
+}
+//* Due to the product being smaller, I needed to adjust the position so it is in the same position as the other product images
+.earphones-link {
+    & a .earphones-image {
+        top: 10px;
+    }
+}

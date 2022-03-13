@@ -1,0 +1,114 @@
+.nav {
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  & .navbar {
+    width: 85%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    border-bottom: 1px solid rgb(53, 53, 53);
+
+    & .hamburger-icon {
+      fill: white;
+      width: 25px;
+
+      @include desktop {
+        display: none;
+      }
+    }
+
+    & .home-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & .company-text {
+        display: none;
+      }
+
+      svg {
+        fill: white;
+
+        &:hover {
+          fill: #d87d4a;
+          transition: fill 0.3s ease;
+        }
+      }
+    }
+
+    & .desktop-nav-list {
+      display: none;
+
+      @include desktop {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+        list-style: none;
+      }
+
+      li {
+        a {
+          color: colorSet(base, light-silver);
+
+          &:hover {
+            color: colorSet(accent, dark-orange);
+            transition: color 0.3s ease;
+          }
+        }
+      }
+    }
+
+    & .cart-icon {
+      width: 28px;
+      height: 28px;
+      fill: white;
+
+      &:hover {
+        cursor: pointer;
+        transition: fill 0.3s ease;
+      }
+    }
+  }
+}
+
+.mobile-nav-list {
+  position: fixed;
+  z-index: 3;
+  top: 4rem;
+  left: -1000px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 90%;
+  padding: 10px 0px;
+  background-color: colorSet(base, offwhite);
+  transition: left 0.8s ease;
+  overflow: scroll;
+  border-radius: 0 0 8px 8px;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.nav-open {
+  position: fixed;
+  top: 4rem;
+  left: 0px;
+  overflow-y: scroll;
+  transition: left 0.8s ease;
+}

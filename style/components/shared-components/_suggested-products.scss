@@ -1,0 +1,187 @@
+.section-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.suggested-products {
+    width: 100%;
+    margin: 0 auto 100px auto;
+    max-width: 1150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+
+    @include tablet{
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    & .suggested-product {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto 20px auto;
+        height: 300px;
+        transition: all .3s ease;
+
+        @include tablet {
+            width: 223px;
+            height: 471px;
+        }
+
+        @include desktop{
+            width: 350px;
+            margin: 0 auto;
+        }
+    }
+
+    & .mark-one {
+        margin: 0;
+        & .product-image {
+            width: 100%;
+            max-width: 327px;
+            height: 150px;
+            background: url("./style/assets/shared/mobile/image-xx99-mark-one-headphones.jpg")
+                no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            @include tablet {
+                height: 318px;
+                max-width: none;
+                background: url("./style/assets/shared/tablet/image-xx99-mark-one-headphones.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+
+            @include desktop{
+                height: 318px;
+                background: url("./style/assets/shared/desktop/image-xx99-mark-one-headphones.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    & .mark-two {
+        margin: 0;
+        & .product-image {
+            width: 100%;
+            max-width: 327px;
+            height: 150px;
+            background: url("./style/assets/shared/mobile/image-xx99-mark-two-headphones.jpg")
+                no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            @include tablet {
+                height: 318px;
+                max-width: none;
+                background: url("./style/assets/shared/tablet/image-xx99-mark-two-headphones.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+
+            @include desktop{
+                height: 318px;
+                background: url("./style/assets/shared/desktop/image-xx99-mark-two-headphones.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    & .xx59 {
+        margin: 0;
+        & .product-image {
+            width: 100%;
+            max-width: 327px;
+            height: 150px;
+            background: url("./style/assets/shared/mobile/image-xx59-headphones.jpg")
+                no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            @include tablet {
+                height: 318px;
+                max-width: none;
+                background: url("./style/assets/shared/tablet/image-xx59-headphones.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+
+            @include desktop{
+                height: 318px;
+                background: url("./style/assets/shared/desktop/image-xx59-headphones.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    & .zx7 {
+        margin: 0;
+        & .product-image {
+            width: 100%;
+            max-width: 327px;
+            height: 150px;
+            background: url("./style/assets/shared/mobile/image-zx7-speaker.jpg")
+                no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            @include tablet {
+                height: 318px;
+                max-width: none;
+                background: url("./style/assets/shared/tablet/image-zx7-speaker.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+
+            @include desktop{
+                height: 318px;
+                background: url("./style/assets/shared/desktop/image-zx7-speaker.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    & .zx9 {
+        margin: 0;
+        & .product-image {
+            width: 100%;
+            max-width: 327px;
+            height: 150px;
+            background: url("./style/assets/shared/mobile/image-zx9-speaker.jpg")
+                no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            @include tablet {
+                height: 318px;
+                max-width: none;
+                background: url("./style/assets/shared/tablet/image-zx9-speaker.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+
+            @include desktop{
+                height: 318px;
+                background: url("./style/assets/shared/desktop/image-zx9-speaker.jpg")
+                    no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,464 @@
+.return-btn {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 40px;
+    border: none;
+    background-color: transparent;
+    text-align: left;
+
+    & a {
+        color: colorSet(base, black);
+    }
+
+    @include tablet {
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    @include desktop {
+        margin-left: 50px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.individual-product-layout {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    & .product-text {
+        width: 90%;
+        max-width: 327px;
+        height: 470px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+
+        @include tablet {
+            max-width: 445px;
+            height: 420px;
+            margin-left: 10px;
+        }
+
+        & .sup-heading {
+            color: colorSet(accent, dark-orange);
+        }
+
+        & h2 {
+            max-width: 250px;
+        }
+
+        & .product-price {
+            font-size: 18px;
+        }
+
+        & .sub-text {
+            color: colorSet(base, light-grey);
+        }
+    }
+
+    & .add-to-cart {
+        width: 100%;
+        max-width: 327px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & .quantity-selector {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & .minus-btn,
+            .plus-btn {
+                width: 40px;
+                height: 48px;
+                background-color: colorSet(base, light-silver);
+                color: colorSet(base, light-grey);
+                border: none;
+                outline: none;
+                font-size: 18px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            & input {
+                width: 40px;
+                height: 48px;
+                background-color: colorSet(base, light-silver);
+                border: none;
+                outline: none;
+                text-align: center;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.product-features {
+    width: 90%;
+    margin: 70px auto 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    @include tablet {
+        align-items: flex-start;
+    }
+
+    @include desktop {
+        width: 90%;
+        max-width: 1100px;
+        margin: 100px auto;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    & .features {
+        width: 100%;
+        max-width: 327px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+
+        @include tablet {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        @include desktop {
+            width: 635px;
+            margin: 0;
+        }
+
+        & h3 {
+            margin-bottom: 20px;
+        }
+
+        & p {
+            color: colorSet(base, light-grey);
+        }
+    }
+
+    & .in-the-box {
+        width: 100%;
+        max-width: 327px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+        flex-direction: column;
+        margin: 50px 0 0 0;
+
+        @include tablet {
+            flex-direction: row;
+            max-width: 600px;
+            justify-content: space-between;
+        }
+
+        @include desktop {
+            max-width: 200px;
+            justify-content: start;
+            flex-direction: column;
+        }
+
+        & h3 {
+            margin-bottom: 30px;
+
+            @include desktop {
+                margin: 0;
+            }
+        }
+
+        & ul {
+            list-style: none;
+
+            @include desktop {
+                margin-top: 50px;
+            }
+
+            & li {
+                margin: 10px 0;
+                color: colorSet(base, light-grey);
+
+                & span {
+                    color: colorSet(accent, dark-orange);
+                    margin-right: 10px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+//* Individual styling for each product image *
+
+.mark2-headphones {
+    & .product-image {
+        & .mobile-image {
+            display: block;
+            width: 100%;
+            max-width: 327px;
+            height: 327px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        & .tablet-image {
+            display: none;
+            max-width: 281px;
+            height: 450px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: block;
+            }
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+        & .desktop-image {
+            display: none;
+
+            @include desktop {
+                display: block;
+                max-width: 400px;
+                height: 420px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.mark1-headphones {
+    & .product-image {
+        & .mobile-image {
+            display: block;
+            width: 100%;
+            max-width: 327px;
+            height: 327px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        & .tablet-image {
+            display: none;
+            max-width: 281px;
+            height: 450px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: block;
+            }
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+        & .desktop-image {
+            display: none;
+
+            @include desktop {
+                display: block;
+                max-width: 400px;
+                height: 420px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.xx59-headphones {
+    & .product-image {
+        & .mobile-image {
+            display: block;
+            width: 100%;
+            max-width: 327px;
+            height: 327px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        & .tablet-image {
+            display: none;
+            max-width: 281px;
+            height: 450px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: block;
+            }
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+        & .desktop-image {
+            display: none;
+
+            @include desktop {
+                display: block;
+                max-width: 400px;
+                height: 420px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.zx9-speaker {
+    & .product-image {
+        & .mobile-image {
+            display: block;
+            width: 100%;
+            max-width: 327px;
+            height: 327px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        & .tablet-image {
+            display: none;
+            max-width: 281px;
+            height: 450px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: block;
+            }
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+        & .desktop-image {
+            display: none;
+
+            @include desktop {
+                display: block;
+                max-width: 400px;
+                height: 420px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.zx7-speaker {
+    & .product-image {
+        & .mobile-image {
+            display: block;
+            width: 100%;
+            max-width: 327px;
+            height: 327px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        & .tablet-image {
+            display: none;
+            max-width: 281px;
+            height: 450px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: block;
+            }
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+        & .desktop-image {
+            display: none;
+
+            @include desktop {
+                display: block;
+                max-width: 400px;
+                height: 420px;
+                border-radius: 8px;
+            }
+        }
+    }
+}
+
+.yx1-earphones {
+    & .product-image {
+        & .mobile-image {
+            display: block;
+            width: 100%;
+            max-width: 327px;
+            height: 327px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+        & .tablet-image {
+            display: none;
+            max-width: 281px;
+            height: 450px;
+            border-radius: 8px;
+
+            @include tablet {
+                display: block;
+            }
+
+            @include desktop {
+                display: none;
+            }
+        }
+
+        & .desktop-image {
+            display: none;
+
+            @include desktop {
+                display: block;
+                max-width: 400px;
+                height: 420px;
+                border-radius: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.summary-checkout {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 327px;
+    min-height: 388px;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    margin: 50px auto 0 auto;
+
+    @include tablet {
+        max-width: 500px;
+        margin: 50px 0 0 50px;
+        padding: 10px 15px;
+    }
+
+    @include desktop {
+        max-width: 350px;
+        margin: -10px auto 0 auto;
+    }
+
+    & .cart-header {
+        width: 100%;
+        margin: 10px 0 0 30px;
+
+        @include tablet{
+            margin: 0;
+        }
+    }
+
+    & .summary-items {
+        width: 100%;
+        height: fit-content;
+        margin: 20px 0;
+
+        &::-webkit-scrollbar {
+            width: .2rem;
+            background-color: transparent;
+        }
+        
+        &::-webkit-scrollbar-thumb{
+            background-color: colorSet(accent, dark-orange);
+            border-radius: 50px;
+        }
+
+        & .summary-row {
+            width: 92%;
+            height: 70px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0 auto;
+
+            @include tablet{
+                width: 100%;
+                margin: 0;
+            }
+
+            & img {
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+            }
+
+            & .nameAndPrice{
+                margin-left: 20px;
+
+                & .summary-item-name{
+                    text-transform: uppercase;
+                    font-weight: 800;
+                }
+
+                & .summary-item-price{
+                    color: colorSet(base, light-grey);
+                    font-weight: bold;
+                }
+            }
+
+            & .summary-quantity{
+                margin-left: auto;
+                margin-right: 10px;
+                width: fit-content;
+                color: colorSet(base, light-grey);
+                font-weight: bold;
+                
+
+                & input { 
+                    border: none;
+                    width: 25px;
+                    color: colorSet(base, light-grey);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    & .total {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        width: 92%;
+        height: 130px;
+        margin: 0 auto;
+
+        @include tablet{
+            width: 100%;
+            margin: 0;
+        }
+
+        & p {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            color: colorSet(base, light-grey);
+
+            & span{
+                color: colorSet(base, black);
+            }
+        }
+
+        & .grand-total-cost{
+            margin-top: auto;
+
+            & span {
+                color: colorSet(accent, dark-orange);
+            }
+        }
+    }
+
+    & .pay-btn{
+        width: 92%;
+        margin: 20px auto;
+
+        @include tablet{
+            width: 100%;
+            margin: 20px 0;
+        }
+    }
+}
